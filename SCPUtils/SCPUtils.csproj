@@ -17,12 +17,11 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,53 +34,135 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.1\lib\net48\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-Publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\publicized_assemblies\Assembly-CSharp-Publicized.dll</HintPath>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="CommandSystem.Core">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\CommandSystem.Core.dll</HintPath>
+    <Reference Include="Assembly-CSharp-Publicized, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
-    <Reference Include="Mirror">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll</HintPath>
+    <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NorthwoodLib">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\NorthwoodLib.dll</HintPath>
+    <Reference Include="Exiled.API, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.CreditTags, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.CreditTags.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.CustomItems, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.CustomItems.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.CustomRoles, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.CustomRoles.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Events, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Loader, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Permissions, Version=6.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\Exiled.Updater.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=5.0.15.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.5.0.15\lib\net45\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NorthwoodLib, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\NorthwoodLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginAPI, Version=12.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.6.0.0-beta.24\lib\net48\PluginAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
-      <HintPath>..\packages\YamlDotNet.11.0.1\lib\net45\YamlDotNet.dll</HintPath>
+    <Reference Include="YamlDotNet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewExiled\Exiled\EXILED\Plugins\dependencies\YamlDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\ASN.Commands\AsnUnWhitelistCommand.cs" />
-    <Compile Include="Commands\ASN.Commands\AsnWhitelistCommand.cs" />
-    <Compile Include="Commands\ASN.Commands\Autonomous System Number.cs" />
-    <Compile Include="Commands\SCPUtilsCommand.cs" />
-    <Compile Include="CommandTranslation.cs" />
+    <Compile Include="Commands\AddIps.cs" />
+    <Compile Include="Commands\Alias.cs" />
+    <Compile Include="Commands\AsnUnwhitelist.cs" />
+    <Compile Include="Commands\AsnWhitelist.cs" />
+    <Compile Include="Commands\BadgePlayTime.cs" />
+    <Compile Include="Commands\Broadcast.cs" />
+    <Compile Include="Commands\BroadcastList.cs" />
+    <Compile Include="Commands\Convert.cs" />
+    <Compile Include="Commands\CreateBroadcast.cs" />
+    <Compile Include="Commands\DeleteBroadcast.cs" />
+    <Compile Include="Commands\Dupeip.cs" />
+    <Compile Include="Commands\MultiAccountWhitelist.cs" />
+    <Compile Include="Commands\OnlineList.cs" />
+    <Compile Include="Commands\PermissionsView.cs" />
+    <Compile Include="Commands\PlayerBroadcast.cs" />
+    <Compile Include="Commands\PlayerDnt.cs" />
+    <Compile Include="Commands\PlaySessions.cs" />
+    <Compile Include="Commands\RemovePreviousBadge.cs" />
+    <Compile Include="Commands\PlayerRestrict.cs" />
+    <Compile Include="Commands\PlayerUnrestrict.cs" />
+    <Compile Include="Commands\PreferencePersist.cs" />
+    <Compile Include="Commands\PlayerDelete.cs" />
+    <Compile Include="Commands\DisableSuicideWarn.cs" />
+    <Compile Include="Commands\EnableSuicideWarn.cs" />
+    <Compile Include="Commands\GlobalEdit.cs" />
+    <Compile Include="Commands\PlayerEdit.cs" />
+    <Compile Include="Commands\PlayerReset.cs" />
+    <Compile Include="Commands\PlayerResetPreferences.cs" />
+    <Compile Include="Commands\PlayTime.cs" />
+    <Compile Include="Commands\RevokeBadge.cs" />
+    <Compile Include="Commands\RoundInfo.cs" />
+    <Compile Include="Commands\ScpList.cs" />
+    <Compile Include="Commands\SetBadge.cs" />
+    <Compile Include="Commands\SetColor.cs" />
+    <Compile Include="Commands\SetName.cs" />
+    <Compile Include="Commands\SetRoundBan.cs" />
+    <Compile Include="Commands\ShowCommandBan.cs" />
+    <Compile Include="Commands\ShowWarn.cs" />
+    <Compile Include="Commands\ShowWarns.cs" />
+    <Compile Include="Commands\StaffList.cs" />
+    <Compile Include="Commands\SwapRequest.cs" />
+    <Compile Include="Commands\SwapRequestAccept.cs" />
+    <Compile Include="Commands\SwapRequestCancel.cs" />
+    <Compile Include="Commands\SwapRequestDeny.cs" />
+    <Compile Include="Commands\Unwarn.cs" />
+    <Compile Include="Commands\Validation.cs" />
     <Compile Include="Configs.cs" />
     <Compile Include="Database\BroadcastDb.cs" />
     <Compile Include="Database\DatabaseIp.cs" />
     <Compile Include="Database\GetBroadcast.cs" />
     <Compile Include="Database\GetIp.cs" />
     <Compile Include="Database\PlaySession.cs" />
-    <Compile Include="Extensions\Broadcasts.cs" />
-    <Compile Include="Extensions\Extension.cs" />
     <Compile Include="Functions\ScpUtilsEvents.cs" />
     <Compile Include="Functions\Webhook.cs" />
     <Compile Include="Database\Database.cs" />
@@ -89,7 +170,6 @@
     <Compile Include="Database\Player.cs" />
     <Compile Include="Functions\Functions.cs" />
     <Compile Include="Functions\EventHandlers.cs" />
-    <Compile Include="Permissions.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -97,12 +177,19 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Commands\Help.cs" />
+    <Compile Include="Commands\HideBadge.cs" />
+    <Compile Include="Commands\Info.cs" />
+    <Compile Include="Commands\PlayerInfo.cs" />
+    <Compile Include="Commands\PlayerList.cs" />
+    <Compile Include="Commands\ShowBadge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,17 +198,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="LiteDB">
-      <Version>5.0.15</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="Northwood.PluginAPI">
-      <Version>12.0.0</Version>
-    </PackageReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
